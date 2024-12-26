@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="Weather.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="outer-weather">
+  <div class="weather-app">
+    <h2>Weather App</h2>
+    <input type="text" class="city" placeholder="Enter city name">
+    <input type="text" class="city" placeholder="Enter API key" id="city1">
+    <a href="https://weatherstack.com/?utm_source=google&utm_medium=cpc&utm_campaign=weatherstack_Search_IN&gad_source=1&gclid=Cj0KCQiAsaS7BhDPARIsAAX5cSDf1sDI-02gBYNLwQH-tuWYvR5vVHUrFIREelXhIEa4cbsOEboM6bYaAno1EALw_wcB">Dont have API Key?</a>
+        <button id="getWeather">Get Weather</button>
+    <div id="weatherResult" class="weather-result"></div>
+  </div>
+    <div class="temperature">
+        <div class="location">
+            <div class="location-logo"><i class="fa-solid fa-location-dot"></i></div>
+            <p class="location-name"></p>
+        </div>
+        <div class="degree">
+            <p class="temp"></p>
+        <div class="define-temp">
+          <p class="cloudy"></p>
+        </div>
+        </div>
+        <div class="all-values">
+          <div class="uv" id="uv1">
+            <div class="uv-img" id="img1">
+            <i class="fa-solid fa-sun"></i>
+            </div>
+            <div class="uv-outer" id="uv-outer1">
+            <p class="uv-text" id="uv-text1"></p>
+            <p class="uv-values1"></p>
+          </div>
+          </div>
+          <div class="uv" id="uv2">
+            <div class="uv-img" id="img2">
+            <i class="fa-solid fa-temperature-three-quarters"></i>
+            </div>
+            <div class="uv-outer"  id="uv-outer2">
+            <p class="uv-text" id="uv-text2"></p>
+            <p class="uv-values2"></p>
+          </div>
+          </div>
+          <div class="uv" id="uv3">
+            <div class="uv-img" id="img3">
+            <i class="fa-solid fa-droplet"></i>
+            </div>
+            <div class="uv-outer"  id="uv-outer3">
+            <p class="uv-text" id="uv-text3"></p>
+            <p class="uv-values3"></p>
+          </div>
+          </div>
+          <div class="uv" id="uv4">
+            <div class="uv-img" id="img4">
+              <i class="fa-solid fa-wind"></i>
+            </div>
+            <div class="uv-outer"  id="uv-outer4">
+            <p class="uv-text" id="uv-text4"></p>
+            <p class="uv-values4"></p>
+          </div>
+          </div>
+          <div class="uv" id="uv5">
+            <div class="uv-img" id="img5">
+              <i class="fa-solid fa-angles-down"></i>
+            </div>
+            <div class="uv-outer"  id="uv-outer5">
+            <p class="uv-text" id="uv-text5"></p>
+            <p class="uv-values5"></p>
+          </div>
+          </div>
+          <div class="uv" id="uv6" >
+            <div class="uv-img" id="img6">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="uv-outer"  id="uv-outer6">
+            <p class="uv-text" id="uv-text6"></p>
+            <p class="uv-values6"></p>
+          </div>
+          </div>
+        </div>
+    </div>
+</div>
+  <script src="Weather.js"></script>
+</body>
+</html>
